@@ -28,7 +28,7 @@ public class dayInMonth {
             case 12 -> monthName = ("Декабре");
         }
         if (year <= 0 || month <= 0) {
-            System.out.println("К сожалению, не смогу вам посчитать, год или месяц не может быть >= 0");
+            System.out.println("К сожалению, не смогу вам посчитать, год или месяц не может быть <= 0");
         } else {
             int max_date = myCalendar.getActualMaximum(Calendar.DAY_OF_MONTH);
             System.out.print("В " + monthName + " " + year + " года " + max_date + " дней");
